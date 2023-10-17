@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+body,
+html {
+    height: 90%;
+    width: 100%;
+    background-color: rgb(49 49 90);
+}
+
+.main {
+    height: 70vh;
+    padding: 0px;
+    margin: 119px 313px;
+    background-color: rgb(111, 111, 168);
+}
+
+h1 {
+    margin: 55px 34px;
+    padding: 0px;
+    position: relative;
+    bottom: -33px;
+}
+
+p {
+    line-height: 2.8rem;
+    margin: 7px 85px;
+    width: 90%;
+    font-size: 20px;
+    padding: 4px 8px;
+    columns: grey;
+}
+li{
+    text-decoration: none;
+    margin: 6px 97px;
+    font-size: 25px;
+}
+.btn{
+    margin: 0px 130px;
+    padding: 15px 20px;
+    background: #583875;
+    color: white;
+    font-size: 10px;
+    font-weight: 100;
+    border: 2px solid white;
+    border-radius: 11px;
+    cursor: pointer;
+}

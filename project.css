@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+body, html{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(49 49 90);
+}
+.main{
+    height: 70vh;
+    padding: 0px;
+    margin: 105px 100px;
+    background-color: rgb(111, 111, 168);
+}
+h1{
+    margin: 65px 44px;
+    padding: 0px;
+    position: relative;
+    bottom: -33px;
+}
+li{
+    text-decoration: none;
+    margin: -10px 39px;
+    font-size: 31px;
+}
+p{
+    margin: 23px 39px;
+    width: 90%;
+    font-size: 18px;
+}
