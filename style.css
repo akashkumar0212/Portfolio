@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    background-attachment:fixed;
 }
 body, html{
     height: 100%;
@@ -10,7 +11,7 @@ body, html{
     color: white;
     /* background-color: rgb(29, 29, 67); */
     background-image: url(https://images.unsplash.com/photo-1685034759882-34583cece8e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1901&q=80);
-    background-size: cover;
+    background-size:auto
 }
 nav{
     justify-content: space-around;
@@ -88,7 +89,7 @@ nav ul li a:hover{
     color: rgb(120, 55, 120);
 }
 .secondSection{
-    height: 80vh;
+    height: 83vh;
     max-width: 85vw;
     margin:auto;
 }
@@ -105,26 +106,30 @@ main hr{
     color: gray;
     margin: 0px, 25px;
 }
-.secondSection .box{
-    background: white;
+.secondSection .box{ 
+    /* background: white; */
     width: 80vw;
-    height: 2px;
+    height: 100px;
     margin: 194px 0px;
     display: flex;
-    justify-content: space-a;
+    justify-content: space-around;
 }
 .secondSection .verticalLine{
     height: 50px;
     width: 1px;
-    background-color: white;
+    
     margin: 0px 60px;
     
 }
-.secondSection .verticalLine1{
+/* .secondSection .verticalLine1{
     height: 50px;
     width: 1px;
-    background-color: white;
+    
     margin: 0px 700px;
+} */
+.secondSection .box{
+    display: flex;
+    justify-content: space-between;
 }
 .vertical-title{
     display: flex;
@@ -172,4 +177,110 @@ footer .second{
 }
 #numgrey{
     color: grey;
+}
+@media screen and (max-width: 1400px ){
+    nav{
+        flex-direction: column;
+        height: 155px;
+    }
+    header{
+        object-fit: cover;
+        
+    }
+    body{
+        background-color: black;
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+    }
+    .secondSection .box{
+        
+        margin: 70px 0px;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        text-align:justify;
+        height: 350px;
+    }
+    footer .first{
+        margin: 3px 45px;
+        text-align: left;
+        display: contents;
+    }
+    footer .footerrights{
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        margin: 50px -5px;
+    }
+    footer .second{
+        display: contents;
+    }
+    footer #numgrey{
+        display: block;
+    }
+    .secondSection .verticalLine {
+        height: unset;
+        width: 1px;
+        margin: 29px 6vw;
+    }
+    .vertical-title{
+        position: relative;
+    margin: 0px -70px;
+    display: flex;
+    left: 204px;
+    }
+    .vertical-title1{
+        left: 128px;
+    }
+    .vertical-desc{
+            position: relative;
+            top: 64px;
+            display: flex;
+            width: 269px;
+            font-size: 15px;
+            margin: 14px 10px;
+            color: rgb(160, 152, 152);
+    }
+    .leftSection{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        flex-direction: column;
+    }
+    .rightSection{
+        display: flex;
+        width: 300px !important;
+        justify-content: center;
+    }
+    div {
+        margin: 20px 66px;
+    }
+    body{
+        min-width: fit-content;
+    }
+    .frontendimg {
+        position: relative;
+        bottom: -53px;
+        left: -23px;
+        bottom: -550px 7px;
+        height: 37px;
+        background-color: #e2dada;
+}
+.vertical-title {
+    display: flex;
+    position: absolute;
+    padding: -15px 15px;
+    font-size: 18px;
+}
 }
